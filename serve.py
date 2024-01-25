@@ -13,7 +13,7 @@ def hello_world():
       return socket.gethostname()
    if (request.method == 'POST'):
       args = ['python3', 'stress_cpu.py']
-      proc = subprocess.Popen(args)
+      proc = subprocess.Popen('python3 stress_cpu.py')
       return 'Success'
 
 
